@@ -36,13 +36,13 @@ if uploaded_file is not None:
             st.warning("⚠️ I'm not confident about this image. Try another one.")
         else:
             st.success(f"### Prediction: {predicted_class}")
-            st.write(f"Confidence: {confidence:.2f}")
+            
 
-     
-        st.write({
-            "cat": float(predictions[0][0]),
-            "dog": float(predictions[0][1])
-        })
+        cat_prob = predictions[0][0] * 100
+        dog_prob = predictions[0][1] * 100
 
+        st.write(f"Cat: {cat_prob:.0f}%")
+        st.write(f"Dog: {dog_prob:.0f}%")
+        
 if st.button("Clear"):
     st.rerun()
