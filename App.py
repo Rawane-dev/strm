@@ -3,6 +3,8 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 
+st.set_page_config(page_title="Cat vs Dog Classifier", page_icon="🐱", layout='wide')
+
 IMG_SIZE = 224
 
 model = tf.keras.models.load_model(
