@@ -1,0 +1,16 @@
+[theme]
+# Base theme: "light" or "dark"
+base = "light"
+
+# Primary accent color
+primaryColor = "#001eff"
+
+# Background colors
+backgroundColor = "#3c3b3b"
+secondaryBackgroundColor = "#4b4c4d"
+
+# Text color
+textColor = "#fff"
+
+# Font
+font = "sans serif"
