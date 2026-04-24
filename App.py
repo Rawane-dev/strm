@@ -44,5 +44,3 @@ if uploaded_file is not None:
         st.write(f"Cat: {cat_prob:.0f}%")
         st.write(f"Dog: {dog_prob:.0f}%")
         
-if st.button("Clear"):
-    st.rerun()
